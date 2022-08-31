@@ -1,0 +1,2886 @@
+data count :  180
+
+
+data number 0 :
+baseAsset:BTC
+baseAssetPrecision:8
+filters:[{'minPrice': '202.70', 'maxPrice': '628379.20', 'filterType': 'PRICE_FILTER', 'tickSize': '0.10'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '1000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.5454', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BTCUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 1 :
+baseAsset:ETH
+baseAssetPrecision:8
+filters:[{'minPrice': '15.78', 'maxPrice': '80515.44', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ETHUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 2 :
+baseAsset:BCH
+baseAssetPrecision:8
+filters:[{'minPrice': '3.50', 'maxPrice': '5835.64', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BCHUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 3 :
+baseAsset:XRP
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0099', 'maxPrice': '16.5506', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:XRPUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 4 :
+baseAsset:EOS
+baseAssetPrecision:8
+filters:[{'minPrice': '0.041', 'maxPrice': '69.500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:EOSUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 5 :
+baseAsset:LTC
+baseAssetPrecision:8
+filters:[{'minPrice': '1.64', 'maxPrice': '2740.75', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LTCUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 6 :
+baseAsset:TRX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00191', 'maxPrice': '3.19132', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:TRXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 7 :
+baseAsset:ETC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.987', 'maxPrice': '1645.650', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.01', 'filterType': 'LOT_SIZE', 'maxQty': '100000', 'minQty': '0.01'}, {'stepSize': '0.01', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '0.01'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:2
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ETCUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 8 :
+baseAsset:LINK
+baseAssetPrecision:8
+filters:[{'minPrice': '0.202', 'maxPrice': '337.331', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.01', 'filterType': 'LOT_SIZE', 'maxQty': '100000', 'minQty': '0.01'}, {'stepSize': '0.01', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '0.01'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:2
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LINKUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 9 :
+baseAsset:XLM
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00315', 'maxPrice': '5.25350', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:XLMUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 10 :
+baseAsset:ADA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.01360', 'maxPrice': '22.82790', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ADAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 11 :
+baseAsset:DASH
+baseAssetPrecision:8
+filters:[{'minPrice': '1.35', 'maxPrice': '2264.50', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:DASHUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 12 :
+baseAsset:ZEC
+baseAssetPrecision:8
+filters:[{'minPrice': '1.82', 'maxPrice': '3035.50', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ZECUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 13 :
+baseAsset:XTZ
+baseAssetPrecision:8
+filters:[{'minPrice': '0.046', 'maxPrice': '76.946', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:XTZUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 14 :
+baseAsset:BNB
+baseAssetPrecision:8
+filters:[{'minPrice': '8.469', 'maxPrice': '14115.832', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.01', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.01'}, {'stepSize': '0.01', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '0.01'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:2
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BNBUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 15 :
+baseAsset:ATOM
+baseAssetPrecision:8
+filters:[{'minPrice': '0.361', 'maxPrice': '602.679', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.01', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.01'}, {'stepSize': '0.01', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '0.01'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:2
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ATOMUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 16 :
+baseAsset:ONT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0074', 'maxPrice': '12.4600', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ONTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 17 :
+baseAsset:IOTA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0085', 'maxPrice': '14.2491', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:IOTAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 18 :
+baseAsset:BAT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0102', 'maxPrice': '17.0133', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BATUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 19 :
+baseAsset:VET
+baseAssetPrecision:8
+filters:[{'minPrice': '0.000730', 'maxPrice': '1.227000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:VETUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 20 :
+baseAsset:NEO
+baseAssetPrecision:8
+filters:[{'minPrice': '0.732', 'maxPrice': '1220.435', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.01', 'filterType': 'LOT_SIZE', 'maxQty': '100000', 'minQty': '0.01'}, {'stepSize': '0.01', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '0.01'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:2
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:NEOUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 21 :
+baseAsset:QTUM
+baseAssetPrecision:8
+filters:[{'minPrice': '0.095', 'maxPrice': '159.005', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:QTUMUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 22 :
+baseAsset:IOST
+baseAssetPrecision:8
+filters:[{'minPrice': '0.000395', 'maxPrice': '0.659629', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:IOSTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 23 :
+baseAsset:THETA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0350', 'maxPrice': '58.8630', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:THETAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 24 :
+baseAsset:ALGO
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0087', 'maxPrice': '14.6418', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ALGOUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 25 :
+baseAsset:ZIL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00109', 'maxPrice': '1.82628', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ZILUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 26 :
+baseAsset:KNC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.05200', 'maxPrice': '87.79200', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00100'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:KNCUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 27 :
+baseAsset:ZRX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0090', 'maxPrice': '15.0586', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ZRXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 28 :
+baseAsset:COMP
+baseAssetPrecision:8
+filters:[{'minPrice': '1.41', 'maxPrice': '2364.37', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:COMPUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 29 :
+baseAsset:OMG
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0540', 'maxPrice': '91.5000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:OMGUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 30 :
+baseAsset:DOGE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.001860', 'maxPrice': '3.116370', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:DOGEUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 31 :
+baseAsset:SXP
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0112', 'maxPrice': '18.8069', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:SXPUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 32 :
+baseAsset:KAVA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0535', 'maxPrice': '89.2894', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:KAVAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 33 :
+baseAsset:BAND
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0386', 'maxPrice': '64.4895', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BANDUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 34 :
+baseAsset:RLC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0352', 'maxPrice': '58.7106', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:RLCUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 35 :
+baseAsset:WAVES
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1360', 'maxPrice': '227.2300', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:WAVESUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 36 :
+baseAsset:MKR
+baseAssetPrecision:8
+filters:[{'minPrice': '23.30', 'maxPrice': '38970', 'filterType': 'PRICE_FILTER', 'tickSize': '0.10'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:MKRUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 37 :
+baseAsset:SNX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.089', 'maxPrice': '149.500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:SNXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 38 :
+baseAsset:DOT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.213', 'maxPrice': '355.600', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:DOTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 39 :
+baseAsset:DEFI
+baseAssetPrecision:8
+filters:[{'minPrice': '21.1', 'maxPrice': '35204.2', 'filterType': 'PRICE_FILTER', 'tickSize': '0.1'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:1
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:DEFIUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 40 :
+baseAsset:YFI
+baseAssetPrecision:8
+filters:[{'minPrice': '277.5', 'maxPrice': '462550', 'filterType': 'PRICE_FILTER', 'tickSize': '0.1'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '500', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '500', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:1
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:YFIUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 41 :
+baseAsset:BAL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.220', 'maxPrice': '366.800', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BALUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 42 :
+baseAsset:TRB
+baseAssetPrecision:8
+filters:[{'minPrice': '0.035', 'maxPrice': '58.850', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:CRVUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 43 :
+baseAsset:TRB
+baseAssetPrecision:8
+filters:[{'minPrice': '0.890', 'maxPrice': '1488.050', 'filterType': 'PRICE_FILTER', 'tickSize': '0.010'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:TRBUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 44 :
+baseAsset:RUNE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0580', 'maxPrice': '97.5500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:RUNEUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 45 :
+baseAsset:SUSHI
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0310', 'maxPrice': '53.2000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:SUSHIUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 46 :
+baseAsset:SRM
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0920', 'maxPrice': '153.5750', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:SRMUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 47 :
+baseAsset:EGLD
+baseAssetPrecision:8
+filters:[{'minPrice': '1.600', 'maxPrice': '2681.500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.010'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:EGLDUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 48 :
+baseAsset:SOL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.9600', 'maxPrice': '1614.4800', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0100'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:SOLUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 49 :
+baseAsset:ICX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0304', 'maxPrice': '50.8000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:ICXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 50 :
+baseAsset:STORJ
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0166', 'maxPrice': '27.7550', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:STORJUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 51 :
+baseAsset:UNI
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1870', 'maxPrice': '311.7500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:UNIUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 52 :
+baseAsset:AVAX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.5800', 'maxPrice': '972', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0100'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:AVAXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 53 :
+baseAsset:FTM
+baseAssetPrecision:8
+filters:[{'minPrice': '0.008300', 'maxPrice': '13.990000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000100'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:FTMUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 54 :
+baseAsset:HNT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1620', 'maxPrice': '270.5580', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:HNTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 55 :
+baseAsset:ENJ
+baseAssetPrecision:8
+filters:[{'minPrice': '0.01570', 'maxPrice': '26.28360', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ENJUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 56 :
+baseAsset:FLM
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0035', 'maxPrice': '5.8671', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:FLMUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 57 :
+baseAsset:TOMO
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0155', 'maxPrice': '25.8577', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:TOMOUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 58 :
+baseAsset:REN
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00360', 'maxPrice': '6.11170', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:RENUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 59 :
+baseAsset:KSM
+baseAssetPrecision:8
+filters:[{'minPrice': '1.450', 'maxPrice': '2423.470', 'filterType': 'PRICE_FILTER', 'tickSize': '0.010'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:KSMUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 60 :
+baseAsset:NEAR
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1320', 'maxPrice': '221.6500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:NEARUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 61 :
+baseAsset:AAVE
+baseAssetPrecision:8
+filters:[{'minPrice': '2.590', 'maxPrice': '4319.630', 'filterType': 'PRICE_FILTER', 'tickSize': '0.010'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:AAVEUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 62 :
+baseAsset:FIL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.174', 'maxPrice': '290.438', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:FILUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 63 :
+baseAsset:RSR
+baseAssetPrecision:8
+filters:[{'minPrice': '0.000774', 'maxPrice': '1.290556', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:RSRUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 64 :
+baseAsset:LRC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.01070', 'maxPrice': '17.87000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LRCUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 65 :
+baseAsset:MATIC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.02520', 'maxPrice': '42', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:MATICUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 66 :
+baseAsset:OCEAN
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00491', 'maxPrice': '8.19404', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:OCEANUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 67 :
+baseAsset:CVC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00439', 'maxPrice': '7.32186', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:CVCUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 68 :
+baseAsset:BEL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.03860', 'maxPrice': '64.44270', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:BELUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 69 :
+baseAsset:CTK
+baseAssetPrecision:8
+filters:[{'minPrice': '0.04300', 'maxPrice': '72.19700', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:CTKUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 70 :
+baseAsset:AXS
+baseAssetPrecision:8
+filters:[{'minPrice': '0.4300', 'maxPrice': '719.7600', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0100'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:AXSUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 71 :
+baseAsset:ALPHA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.01680', 'maxPrice': '28', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:ALPHAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 72 :
+baseAsset:ZEN
+baseAssetPrecision:8
+filters:[{'minPrice': '0.474', 'maxPrice': '791.300', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ZENUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 73 :
+baseAsset:SKL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00147', 'maxPrice': '2.46550', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:SKLUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 74 :
+baseAsset:GRT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00313', 'maxPrice': '5.22950', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:GRTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 75 :
+baseAsset:BNT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0954', 'maxPrice': '159.1426', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.8500', 'multiplierUp': '1.1500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:BNTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 76 :
+baseAsset:1INCH
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0204', 'maxPrice': '34.0750', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:1INCHUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 77 :
+baseAsset:UNFI
+baseAssetPrecision:8
+filters:[{'minPrice': '0.232', 'maxPrice': '387.357', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:UNFIUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 78 :
+baseAsset:BTC
+baseAssetPrecision:8
+filters:[{'minPrice': '608.29', 'maxPrice': '1013819.96', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '12', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '5', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BTCBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 79 :
+baseAsset:CHZ
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00656', 'maxPrice': '10.93727', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:CHZUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 80 :
+baseAsset:SAND
+baseAssetPrecision:8
+filters:[{'minPrice': '0.02870', 'maxPrice': '47.86500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:SANDUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 81 :
+baseAsset:ANKR
+baseAssetPrecision:8
+filters:[{'minPrice': '0.001060', 'maxPrice': '1.780500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ANKRUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 82 :
+baseAsset:LIT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.021', 'maxPrice': '36.613', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LITUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 83 :
+baseAsset:REEF
+baseAssetPrecision:8
+filters:[{'minPrice': '0.000113', 'maxPrice': '0.188750', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:REEFUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 84 :
+baseAsset:RVN
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00280', 'maxPrice': '4.67471', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:RVNUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 85 :
+baseAsset:SFP
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0320', 'maxPrice': '53.3950', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:SFPUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 86 :
+baseAsset:XEM
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0035', 'maxPrice': '5.8462', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:XEMUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 87 :
+baseAsset:BTCST
+baseAssetPrecision:8
+filters:[{'minPrice': '0.668', 'maxPrice': '1000000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.8500', 'multiplierUp': '1.1500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:BTCSTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 88 :
+baseAsset:COTI
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00272', 'maxPrice': '4.54993', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:COTIUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 89 :
+baseAsset:CHR
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0054', 'maxPrice': '9.0550', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:CHRUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 90 :
+baseAsset:MANA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0235', 'maxPrice': '39.2800', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:MANAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 91 :
+baseAsset:ALICE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.061', 'maxPrice': '102.450', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ALICEUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 92 :
+baseAsset:HBAR
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00841', 'maxPrice': '14.02950', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:HBARUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 93 :
+baseAsset:ONE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00064', 'maxPrice': '1.07948', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ONEUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 94 :
+baseAsset:LINA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00024', 'maxPrice': '0.41020', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LINAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 95 :
+baseAsset:STMX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00023', 'maxPrice': '0.39959', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:STMXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 96 :
+baseAsset:DENT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.000028', 'maxPrice': '0.047958', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:DENTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 97 :
+baseAsset:CELR
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00053', 'maxPrice': '0.88514', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:CELRUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 98 :
+baseAsset:HOT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.000063', 'maxPrice': '0.105780', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:HOTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 99 :
+baseAsset:MTL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0365', 'maxPrice': '60.9550', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:MTLUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 100 :
+baseAsset:OGN
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0051', 'maxPrice': '8.5866', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:OGNUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 101 :
+baseAsset:NKN
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00860', 'maxPrice': '14.34653', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:NKNUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 102 :
+baseAsset:DGB
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00087', 'maxPrice': '1.45450', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:DGBUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 103 :
+baseAsset:1000SHIB
+baseAssetPrecision:8
+filters:[{'minPrice': '0.000366', 'maxPrice': '0.610900', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:1000SHIBUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 104 :
+baseAsset:BAKE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0001', 'maxPrice': '47.3794', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:BAKEUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 105 :
+baseAsset:GTC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.346', 'maxPrice': '577.250', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:GTCUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 106 :
+baseAsset:ETH
+baseAssetPrecision:8
+filters:[{'minPrice': '47.37', 'maxPrice': '78962.90', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ETHBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 107 :
+baseAsset:BTCDOM
+baseAssetPrecision:8
+filters:[{'minPrice': '36.3', 'maxPrice': '60623.7', 'filterType': 'PRICE_FILTER', 'tickSize': '0.1'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:1
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BTCDOMUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 108 :
+baseAsset:MASK
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0400', 'maxPrice': '66.7080', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.7000', 'multiplierUp': '1.3000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:MASKUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 109 :
+baseAsset:BNB
+baseAssetPrecision:8
+filters:[{'minPrice': '8.460', 'maxPrice': '14115.480', 'filterType': 'PRICE_FILTER', 'tickSize': '0.010'}, {'stepSize': '0.01', 'filterType': 'LOT_SIZE', 'maxQty': '100000', 'minQty': '0.01'}, {'stepSize': '0.01', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.01'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:2
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BNBBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 110 :
+baseAsset:ADA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.01360', 'maxPrice': '22.82850', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ADABUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 111 :
+baseAsset:DOGE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.005120', 'maxPrice': '8.534240', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:DOGEBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 112 :
+baseAsset:XRP
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0229', 'maxPrice': '38.2716', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:XRPBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 113 :
+baseAsset:IOTX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00092', 'maxPrice': '1.54118', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:IOTXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 114 :
+baseAsset:AUDIO
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0085', 'maxPrice': '14.2427', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:AUDIOUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 115 :
+baseAsset:RAY
+baseAssetPrecision:8
+filters:[{'minPrice': '0.020', 'maxPrice': '33.691', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.8500', 'multiplierUp': '1.1500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:RAYUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 116 :
+baseAsset:C98
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0132', 'maxPrice': '22.1519', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:C98USDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 117 :
+baseAsset:ATA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0049', 'maxPrice': '8.2888', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ATAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 118 :
+baseAsset:SOL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.9600', 'maxPrice': '1614', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0100'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:SOLBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 119 :
+baseAsset:FTT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.813', 'maxPrice': '1355.350', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:FTTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 120 :
+baseAsset:FTT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.813', 'maxPrice': '1356.363', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:FTTBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 121 :
+baseAsset:DYDX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.222', 'maxPrice': '371.028', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:DYDXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 122 :
+baseAsset:1000XEC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00133', 'maxPrice': '2.22750', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:1000XECUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 123 :
+baseAsset:GALA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00153', 'maxPrice': '2.55255', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:GALAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 124 :
+baseAsset:CELO
+baseAssetPrecision:8
+filters:[{'minPrice': '0.025', 'maxPrice': '41.920', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:CELOUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 125 :
+baseAsset:AR
+baseAssetPrecision:8
+filters:[{'minPrice': '0.303', 'maxPrice': '506.411', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ARUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 126 :
+baseAsset:KLAY
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0069', 'maxPrice': '11.6263', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.8500', 'multiplierUp': '1.1500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:KLAYUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 127 :
+baseAsset:ARPA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00106', 'maxPrice': '1.78001', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ARPAUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 128 :
+baseAsset:CTSI
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0189', 'maxPrice': '31.5954', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:CTSIUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 129 :
+baseAsset:LPT
+baseAssetPrecision:8
+filters:[{'minPrice': '1.059', 'maxPrice': '1765.155', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:LPTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 130 :
+baseAsset:ENS
+baseAssetPrecision:8
+filters:[{'minPrice': '0.783', 'maxPrice': '1306.221', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:ENSUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 131 :
+baseAsset:PEOPLE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00061', 'maxPrice': '1.03000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.8500', 'multiplierUp': '1.1500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:PEOPLEUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 132 :
+baseAsset:ANT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.050', 'maxPrice': '83.450', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ANTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 133 :
+baseAsset:ROSE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00190', 'maxPrice': '3.17037', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ROSEUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 134 :
+baseAsset:DUSK
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00403', 'maxPrice': '6.71893', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:DUSKUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 135 :
+baseAsset:FLOW
+baseAssetPrecision:8
+filters:[{'minPrice': '0.063', 'maxPrice': '105.039', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:FLOWUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 136 :
+baseAsset:IMX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0255', 'maxPrice': '42.5354', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:IMXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 137 :
+baseAsset:API3
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0500', 'maxPrice': '84.3650', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:API3USDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 138 :
+baseAsset:GMT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.02040', 'maxPrice': '34.01500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:GMTUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 139 :
+baseAsset:APE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1450', 'maxPrice': '242.2630', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:APEUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 140 :
+baseAsset:BNX
+baseAssetPrecision:8
+filters:[{'minPrice': '3.9500', 'maxPrice': '6597.3500', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0100'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BNXUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 141 :
+baseAsset:WOO
+baseAssetPrecision:8
+filters:[{'minPrice': '0.00457', 'maxPrice': '7.62959', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00001'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:WOOUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 142 :
+baseAsset:JASMY
+baseAssetPrecision:8
+filters:[{'minPrice': '0.000260', 'maxPrice': '0.434760', 'filterType': 'PRICE_FILTER', 'tickSize': '0.000010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:JASMYUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 143 :
+baseAsset:DAR
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0074', 'maxPrice': '12.4410', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:4
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:DARUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 144 :
+baseAsset:GAL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.07670', 'maxPrice': '127.92750', 'filterType': 'PRICE_FILTER', 'tickSize': '0.00010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:GALUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 145 :
+baseAsset:AVAX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.583000', 'maxPrice': '972.200000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:AVAXBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 146 :
+baseAsset:NEAR
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1330000', 'maxPrice': '221.8490000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:NEARBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 147 :
+baseAsset:GMT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0204000', 'maxPrice': '34.0219000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:GMTBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 148 :
+baseAsset:APE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1450000', 'maxPrice': '242.2150000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:APEBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 149 :
+baseAsset:TRX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0019150', 'maxPrice': '3.1918110', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0000010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '100000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:TRXBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 150 :
+baseAsset:GALA
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0015310', 'maxPrice': '2.5525360', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0000010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '100000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:GALABUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 151 :
+baseAsset:FTM
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0083000', 'maxPrice': '13.9935000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001000'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:FTMBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 152 :
+baseAsset:GAL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0760000', 'maxPrice': '127.8980000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:GALBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 153 :
+baseAsset:ANC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0027000', 'maxPrice': '4.6614000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001000'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ANCBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 154 :
+baseAsset:1000LUNC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0064000', 'maxPrice': '10.8150000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001000'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:1000LUNCBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 155 :
+baseAsset:LUNA2
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0544000', 'maxPrice': '90.7939000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001000'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '100000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LUNA2BUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 156 :
+baseAsset:OP
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0346000', 'maxPrice': '57.7989000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:OPUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 157 :
+baseAsset:DOT
+baseAssetPrecision:8
+filters:[{'minPrice': '0.2130000', 'maxPrice': '355.9980000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:DOTBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 158 :
+baseAsset:ICP
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1900000', 'maxPrice': '318.2220000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ICPBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 159 :
+baseAsset:TLM
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0007500', 'maxPrice': '1.2500000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0000100'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '100000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:TLMBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 160 :
+baseAsset:BTC
+baseAssetPrecision:8
+filters:[{'minPrice': '730', 'maxPrice': '1216775.6', 'filterType': 'PRICE_FILTER', 'tickSize': '0.1'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '500', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '500', 'minQty': '0.001'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:1
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:BTCUSDT_220930
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 161 :
+baseAsset:ETH
+baseAssetPrecision:8
+filters:[{'minPrice': '51.34', 'maxPrice': '85574.52', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.001'}, {'limit': 0, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:2
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ETHUSDT_220930
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 162 :
+baseAsset:WAVE
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0010000', 'maxPrice': '100000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 0, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:PENDING_TRADING
+symbol:WAVEBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 163 :
+baseAsset:LINK
+baseAssetPrecision:8
+filters:[{'minPrice': '0.2020000', 'maxPrice': '337.3770000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LINKBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 164 :
+baseAsset:WAVES
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1360000', 'maxPrice': '227.1550000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:WAVESBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 165 :
+baseAsset:XMR
+baseAssetPrecision:8
+filters:[{'minPrice': '4.511', 'maxPrice': '7518.827', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001'}, {'stepSize': '0.001', 'filterType': 'LOT_SIZE', 'maxQty': '100000000', 'minQty': '0.001'}, {'stepSize': '0.001', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '100000000', 'minQty': '0.001'}, {'limit': 0, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:3
+quantityPrecision:3
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:XMRUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 166 :
+baseAsset:LTC
+baseAssetPrecision:8
+filters:[{'minPrice': '1.640000', 'maxPrice': '2742.690000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.010000'}, {'stepSize': '0.10', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.10'}, {'stepSize': '0.10', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.10'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:2
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LTCBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 167 :
+baseAsset:SAND
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0280000', 'maxPrice': '47.8500000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:SANDBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 168 :
+baseAsset:MATIC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0252000', 'maxPrice': '42.0318000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001000'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:MATICBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 169 :
+baseAsset:CVX
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1530000', 'maxPrice': '255.9180000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:CVXBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 170 :
+baseAsset:FIL
+baseAssetPrecision:8
+filters:[{'minPrice': '0.1740000', 'maxPrice': '290.4000000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:FILBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 171 :
+baseAsset:LEVER
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0000640', 'maxPrice': '0.1068200', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0000010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LEVERBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 172 :
+baseAsset:1000SHIB
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0003660', 'maxPrice': '0.6106000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0000010'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:1000SHIBBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 173 :
+baseAsset:ETC
+baseAssetPrecision:8
+filters:[{'minPrice': '0.986000', 'maxPrice': '1644.700000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:ETCBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 174 :
+baseAsset:LDO
+baseAssetPrecision:8
+filters:[{'minPrice': '0.060000', 'maxPrice': '101.136000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:LDOBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 175 :
+baseAsset:UNI
+baseAssetPrecision:8
+filters:[{'minPrice': '0.187000', 'maxPrice': '311.687000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.001000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:6
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:UNIBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 176 :
+baseAsset:AUCTION
+baseAssetPrecision:8
+filters:[{'minPrice': '0.2320000', 'maxPrice': '387.4700000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:BUSD
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:AUCTIONBUSD
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 177 :
+baseAsset:INJ
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0470000', 'maxPrice': '78.8460000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0010000'}, {'stepSize': '0.1', 'filterType': 'LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'stepSize': '0.1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '1000000', 'minQty': '0.1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9500', 'multiplierUp': '1.0500', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:1
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:INJUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 178 :
+baseAsset:STG
+baseAssetPrecision:8
+filters:[{'minPrice': '0.0196000', 'maxPrice': '32.7080000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.0001000'}, {'stepSize': '1', 'filterType': 'LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'stepSize': '1', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000000', 'minQty': '1'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:7
+quantityPrecision:0
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:STGUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+data number 179 :
+baseAsset:FOOTBALL
+baseAssetPrecision:8
+filters:[{'minPrice': '33.22000', 'maxPrice': '55377.66000', 'filterType': 'PRICE_FILTER', 'tickSize': '0.01000'}, {'stepSize': '0.01', 'filterType': 'LOT_SIZE', 'maxQty': '10000', 'minQty': '0.01'}, {'stepSize': '0.01', 'filterType': 'MARKET_LOT_SIZE', 'maxQty': '10000', 'minQty': '0.01'}, {'limit': 200, 'filterType': 'MAX_NUM_ORDERS'}, {'limit': 10, 'filterType': 'MAX_NUM_ALGO_ORDERS'}, {'notional': '10', 'filterType': 'MIN_NOTIONAL'}, {'multiplierDown': '0.9000', 'multiplierUp': '1.1000', 'multiplierDecimal': '4', 'filterType': 'PERCENT_PRICE'}]
+maintMarginPercent:2.5
+orderTypes:['LIMIT', 'MARKET', 'STOP', 'STOP_MARKET', 'TAKE_PROFIT', 'TAKE_PROFIT_MARKET', 'TRAILING_STOP_MARKET']
+pricePrecision:5
+quantityPrecision:2
+quoteAsset:USDT
+quotePrecision:8
+requiredMarginPercent:5.0
+status:TRADING
+symbol:FOOTBALLUSDT
+timeInForce:['GTC', 'IOC', 'FOK', 'GTX']
+
+
+
+
+
