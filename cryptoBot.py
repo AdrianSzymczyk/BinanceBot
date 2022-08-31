@@ -55,7 +55,7 @@ def get_symbols_list(bin_api: str, bin_key: str) -> [str]:
     return symbols_list
 
 
-def create_first_array(bin_api: str, bin_key: str, symbols: [str]) -> [{}]:
+def create_first_array(bin_api: str, bin_key: str, symbols: [str]) -> [{str: float}]:
     cryptocurrency_list = []
     for symbol in symbols:
         print("Actual symbol:", symbol)
@@ -63,15 +63,19 @@ def create_first_array(bin_api: str, bin_key: str, symbols: [str]) -> [{}]:
     return cryptocurrency_list
 
 
-def one_minute_period():
-    pass
+def one_minute_period(bin_api: str, bin_key: str, cryptocurrencies_prices: [{str: float}], symbols: [str]):
+    for symbol, dictt in zip(symbols, cryptocurrencies_prices):
+        current_price: float = get_price(bin_api, bin_key, symbol)
+        for elem in dictt:
+            print(symbol, "old value:", dictt[elem], "new value:", current_price, "difference:", round((1 - (dictt[elem]/current_price))*100, 5), "(%)")
 
 
 symbols = get_symbols_list(binance_api, secret_key)
 # print(symbols)
 # for symbol in symbols:
 #     print(symbol, get_price(binance_api, secret_key, symbol))
-print(create_first_array(binance_api, secret_key, symbols))
+initial_prices: [{str: float}] = create_first_array(binance_api, secret_key, symbols)
+one_minute_period(binance_api, secret_key, initial_prices, symbols)
 
 request_client = RequestClient(api_key=binance_api, secret_key=secret_key)
 # print(get_price(binance_api, secret_key, "NEOUSDT"))
