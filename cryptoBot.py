@@ -2,6 +2,7 @@ from binance_f import RequestClient
 from binance_f.constant.test import *
 from binance_f.base.printobject import *
 from contextlib import redirect_stdout
+import threading
 
 binance_api: str = 'PMboj6WZwCdSSLEL0RvvSiWuaTkYMzFXgabNwisbzNhGuogw0wK68aRGEg1KlepZ'
 secret_key: str = 'HVerz1NkXi2PWW4D4PY7gm498tHYwzx6Kd636UXSwwHonL3YDmUhCHCULD5KR2qR'
@@ -56,38 +57,43 @@ def get_symbols_list(bin_api: str, bin_key: str) -> [str]:
 
 
 def create_first_array(bin_api: str, bin_key: str, symbols: [str]) -> [{str: float}]:
+    print("Setting up initial prices for all available crypto!! LET'S GO")
     cryptocurrency_list = []
     for symbol in symbols:
-        print("Actual symbol:", symbol)
+        # print("Actual symbol:", symbol)
         cryptocurrency_list.append({symbol: get_price(bin_api, bin_key, symbol)})
+    print("Available cryptocurrencies: ", len(cryptocurrency_list))
     return cryptocurrency_list
 
 
 def one_minute_period(bin_api: str, bin_key: str, cryptocurrencies_prices: [{str: float}], symbols: [str]):
+    print("--------------------Looking for a significant differences--------------------")
     for symbol, dictt in zip(symbols, cryptocurrencies_prices):
         current_price: float = get_price(bin_api, bin_key, symbol)
         for elem in dictt:
-            print(symbol, "old value:", dictt[elem], "new value:", current_price, "difference:", round((1 - (dictt[elem]/current_price))*100, 5), "(%)")
+            difference: float = round((1 - (dictt[elem]/current_price))*100, 5)
+            if abs(difference) > 0.3:
+                print(symbol, "old value:", dictt[elem], "new value:", current_price, "difference:", difference, "(%)")
+            dictt[elem] = current_price
+
+
+def five_minutes_period(bin_api: str, bin_key: str, cryptocurrencies_prices: [{str: float}], symbols: [str]):
+    threading.Timer(240.0,five_minutes_period).start()
+    print("""\n----------------------------------------
+    FIVE MINUTES PERIOD""")
+    for symbol, dictt in zip(symbols, cryptocurrencies_prices):
+        current_price: float = get_price(bin_api, bin_key, symbol)
+        for elem in dictt:
+            difference: float = round((1 - (dictt[elem]/current_price))*100, 5)
+            if abs(difference) > 0.6:
+                print(symbol, "old value:", dictt[elem], "new value:", current_price, "difference:", difference, "(%)")
 
 
 symbols = get_symbols_list(binance_api, secret_key)
-# print(symbols)
-# for symbol in symbols:
-#     print(symbol, get_price(binance_api, secret_key, symbol))
 initial_prices: [{str: float}] = create_first_array(binance_api, secret_key, symbols)
-one_minute_period(binance_api, secret_key, initial_prices, symbols)
 
-request_client = RequestClient(api_key=binance_api, secret_key=secret_key)
-# print(get_price(binance_api, secret_key, "NEOUSDT"))
-# result = request_client.get_exchange_information()
-# PrintMix.print_data(result.symbols)
-
-# result1 = request_client.get_recent_trades_list(symbol="NEOUSDT", limit=1)
-# print("======= Recent Trades List =======")
-# PrintMix.print_data(result1)
-# print("==================================")
-
-# result = request_client.get_mark_price(symbol="NEOUSDT")
-# print("======= Mark Price =======")
-# PrintBasic.print_obj(result)
-# print("==========================")
+x = 0
+while x < 2:
+    print("Step:", x)
+    one_minute_period(binance_api, secret_key, initial_prices, symbols)
+    x += 1
