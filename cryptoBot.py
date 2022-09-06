@@ -1,5 +1,4 @@
 from binance_f import RequestClient
-from binance_f.constant.test import *
 from binance_f.base.printobject import *
 from contextlib import redirect_stdout
 import threading
@@ -62,38 +61,59 @@ def create_first_array(bin_api: str, bin_key: str, symbols: [str]) -> [{str: flo
     for symbol in symbols:
         # print("Actual symbol:", symbol)
         cryptocurrency_list.append({symbol: get_price(bin_api, bin_key, symbol)})
-    print("Available cryptocurrencies: ", len(cryptocurrency_list))
+    print(f"Available cryptocurrencies: {len(cryptocurrency_list)}")
     return cryptocurrency_list
 
 
-def one_minute_period(bin_api: str, bin_key: str, cryptocurrencies_prices: [{str: float}], symbols: [str]):
+def one_minute_period(bin_api: str, bin_key: str, cryptocurrencies_prices: [{str: float}], symbols: [str], changes_storage: [{str: float}], first_usage: int) -> [{str: float}]:
+    # first_usage: 1-true, 0-false definie if array should be firstly filled or updated
+    tmp_changes_storage: [{str: float}] = []
     print("--------------------Looking for a significant differences--------------------")
     for symbol, dictt in zip(symbols, cryptocurrencies_prices):
         current_price: float = get_price(bin_api, bin_key, symbol)
         for elem in dictt:
-            difference: float = round((1 - (dictt[elem]/current_price))*100, 5)
-            if abs(difference) > 0.3:
-                print(symbol, "old value:", dictt[elem], "new value:", current_price, "difference:", difference, "(%)")
+            difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
+            if abs(difference) > 0.4:
+                if abs(difference) > 0.8:
+                    print(f"!!!BIG CANDLE!!! [{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
+                else:
+                    print(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
+                if first_usage == 1:
+                    # print("Adding element to changes_storage:", symbol)
+                    changes_storage.append({symbol: dictt[elem]})
+                else:
+                    for i in range(len(changes_storage)):
+                        if symbol in changes_storage[i]:
+                            difference: float = round((1 - (changes_storage[i].get(symbol) / current_price)) * 100, 3)
+                            print(f""">>>>>DOUBLE signal in a row for [{symbol}], make your move now!!!
+>>>>>The difference from 2 last trades for [{symbol}] -> [old_v: {changes_storage[i].get(symbol)}->new_v: {current_price}], difference: {difference}(%)""")
+                    tmp_changes_storage.append({symbol: dictt[elem]})
             dictt[elem] = current_price
+    if first_usage != 1:
+        changes_storage.clear()
+        changes_storage = tmp_changes_storage
+    # print(f"New changes_storage: {changes_storage}")
+    return changes_storage
 
 
 def five_minutes_period(bin_api: str, bin_key: str, cryptocurrencies_prices: [{str: float}], symbols: [str]):
-    threading.Timer(240.0,five_minutes_period).start()
+    threading.Timer(240.0, five_minutes_period).start()
     print("""\n----------------------------------------
     FIVE MINUTES PERIOD""")
     for symbol, dictt in zip(symbols, cryptocurrencies_prices):
         current_price: float = get_price(bin_api, bin_key, symbol)
         for elem in dictt:
-            difference: float = round((1 - (dictt[elem]/current_price))*100, 5)
+            difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
             if abs(difference) > 0.6:
-                print(symbol, "old value:", dictt[elem], "new value:", current_price, "difference:", difference, "(%)")
+                print(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
 
 
 symbols = get_symbols_list(binance_api, secret_key)
 initial_prices: [{str: float}] = create_first_array(binance_api, secret_key, symbols)
+changes_signals: [{str: float}] = []
 
-x = 0
-while x < 2:
-    print("Step:", x)
-    one_minute_period(binance_api, secret_key, initial_prices, symbols)
-    x += 1
+
+one_minute_period(binance_api, secret_key, initial_prices, symbols, changes_signals, 1)
+while True:
+    changes_signals = one_minute_period(binance_api, secret_key, initial_prices, symbols, changes_signals, 0)
+    # print("How Changes_signal looks like in loop:", changes_signals)
