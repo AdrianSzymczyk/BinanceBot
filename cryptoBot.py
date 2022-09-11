@@ -5,6 +5,8 @@ from contextlib import redirect_stdout
 import threading
 from colorama import init
 from termcolor import colored
+from socket import error as SocketError
+import errno
 
 binance_api: str = 'PMboj6WZwCdSSLEL0RvvSiWuaTkYMzFXgabNwisbzNhGuogw0wK68aRGEg1KlepZ'
 secret_key: str = 'HVerz1NkXi2PWW4D4PY7gm498tHYwzx6Kd636UXSwwHonL3YDmUhCHCULD5KR2qR'
@@ -12,7 +14,12 @@ secret_key: str = 'HVerz1NkXi2PWW4D4PY7gm498tHYwzx6Kd636UXSwwHonL3YDmUhCHCULD5KR
 
 def get_price(bin_api: str, bin_key: str, symbol: str) -> float:
     request_client = RequestClient(api_key=bin_api, secret_key=bin_key)
-    result = request_client.get_mark_price(symbol=symbol)
+    try:
+        result = request_client.get_mark_price(symbol=symbol)
+    except SocketError as e:
+        if e.errno != errno.ECONNRESET:
+            raise
+        pass
     price_str = []
     price: float = 0
     with open('data.txt', 'w') as f:
@@ -43,7 +50,7 @@ def get_symbols_list(bin_api: str, bin_key: str) -> [str]:
         with redirect_stdout(f):
             PrintMix.print_data(result.symbols)
     # create table and fill it with crypto symbols
-    exeptions: [str] = ['WAVEBUSD']
+    exeptions: [str] = ['WAVEBUSD', '1000LUNCUSDT']
     symbols_list: [str] = []
     with open('symbols.txt') as f:
         for line in f:
@@ -77,10 +84,14 @@ def one_minute_period(bin_api: str, bin_key: str, cryptocurrencies_prices: [{str
         for elem in dictt:
             difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
             if abs(difference) > 0.4:
-                if abs(difference) > 0.8:
-                    print(colored("!!!BIG CANDLE!!!",  'red', 'on_yellow'),  colored(symbol, 'yellow', attrs=['bold']), f"-> old value: {dictt[elem]}, "
-                                                                                                                        f"new value: {current_price}, "
-                                                                                                                        f"difference: {difference}(%)")
+                if difference > 0.8:
+                    print(colored("!!!BIG CANDLE!!!", 'red', 'on_yellow'), colored(symbol, 'yellow', attrs=['bold']), f"-> old value: {dictt[elem]}, new value: {current_price}, "
+                                                                                                                      f"difference:", colored(str(difference), 'green',
+                                                                                                                                              attrs=['bold']), "(%)")
+                elif difference < -0.8:
+                    print(colored("!!!BIG CANDLE!!!", 'red', 'on_yellow'), colored(symbol, 'yellow', attrs=['bold']), f"-> old value: {dictt[elem]}, new value: {current_price}, "
+                                                                                                                      f"difference:", colored(str(difference), 'red',
+                                                                                                                                              attrs=['bold']), "(%)")
                 else:
                     print(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
                 if first_usage == 1:
@@ -90,8 +101,12 @@ def one_minute_period(bin_api: str, bin_key: str, cryptocurrencies_prices: [{str
                     for i in range(len(changes_storage)):
                         if symbol in changes_storage[i]:
                             difference: float = round((1 - (changes_storage[i].get(symbol) / current_price)) * 100, 3)
-                            print(colored(">>>>>DOUBLE signal",  'green', 'on_red'), "in a row for", colored(symbol, 'red', attrs=['bold']), f"""make your move now!!!
->>>>>The difference from 2 last trades for [{symbol}] -> [old_v: {changes_storage[i].get(symbol)}->new_v: {current_price}], difference: {difference}(%)""")
+                            if difference > 0:
+                                print(colored(">>>>>DOUBLE signal", 'green', 'on_red'), "in a row for", colored(symbol, 'red', attrs=['bold']),
+                                      f"make your move now, difference", colored(str(difference), 'green', attrs=['bold']), "(%)!!!")
+                            else:
+                                print(colored(">>>>>DOUBLE signal", 'green', 'on_red'), "in a row for", colored(symbol, 'red', attrs=['bold']),
+                                      f"make your move now, difference:", colored(str(difference), 'red', attrs=['bold']), "(%)!!!")
                     tmp_changes_storage.append({symbol: dictt[elem]})
             dictt[elem] = current_price
     if first_usage != 1:
@@ -118,7 +133,6 @@ def five_minutes_period(bin_api: str, bin_key: str, cryptocurrencies_prices: [{s
 symbols = get_symbols_list(binance_api, secret_key)
 initial_prices: [{str: float}] = create_first_array(binance_api, secret_key, symbols)
 changes_signals: [{str: float}] = []
-
 
 one_minute_period(binance_api, secret_key, initial_prices, symbols, changes_signals, 1)
 while True:
