@@ -1,6 +1,6 @@
-json_parse:<function MarkPrice.json_parse at 0x00000248E9914550>
-lastFundingRate:0.00048936
-markPrice:1109.92863861
-nextFundingTime:1662595200000
-symbol:FOOTBALLUSDT
-time:1662589214001
+json_parse:<function MarkPrice.json_parse at 0x000002217F0D6550>
+lastFundingRate:0.0075
+markPrice:0.09981554
+nextFundingTime:1662912000000
+symbol:COTIUSDT
+time:1662886322000
