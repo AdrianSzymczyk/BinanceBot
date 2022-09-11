@@ -1,6 +1,6 @@
-json_parse:<function MarkPrice.json_parse at 0x000002217F0D6550>
-lastFundingRate:0.0075
-markPrice:0.09981554
-nextFundingTime:1662912000000
-symbol:COTIUSDT
-time:1662886322000
+json_parse:<function MarkPrice.json_parse at 0x0000021C4F307670>
+lastFundingRate:0.0
+markPrice:294.80606349
+nextFundingTime:1662940800000
+symbol:BNBBUSD
+time:1662933015000
