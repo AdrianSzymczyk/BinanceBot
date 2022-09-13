@@ -1,6 +1,6 @@
-json_parse:<function MarkPrice.json_parse at 0x0000021C4F307670>
-lastFundingRate:0.0
-markPrice:294.80606349
-nextFundingTime:1662940800000
-symbol:BNBBUSD
-time:1662933015000
+json_parse:<function MarkPrice.json_parse at 0x000001663C31E9D0>
+lastFundingRate:0.0001
+markPrice:4.2501539
+nextFundingTime:1663056000000
+symbol:LUNA2USDT
+time:1663055518000
