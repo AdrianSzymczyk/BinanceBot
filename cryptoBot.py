@@ -92,14 +92,15 @@ def create_first_array(bin_api: str, bin_key: str, symbols: [str]) -> [{str: flo
     return cryptocurrency_list
 
 
-def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}], symbols: [str]) -> [{str: float}]:
+def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}], symbols: [str]):
     # first_usage: 1-true, 0-false define if array should be firstly filled or updated
     multi_changes_storage: [{str: float}] = []
     first_usage: int = 1
     while True:
         messages_to_print: [str] = []
         tmp_changes_storage: [{str: float}] = []
-        print(f'{color.MAGENTA}{color.BOLD}--------------------Looking for a significant differences--------------------{color.END}')
+        print(f'{color.BLUE}{color.BOLD}-------------1min method start-------------{color.END}')
+        messages_to_print.append(f'{color.MAGENTA}{color.BOLD}--------------------ONE MINUTE PERIOD RESULTS--------------------{color.END}')
         for symbol, dictt in zip(symbols, initial_prices):
             current_price: float = get_price(bin_api, bin_key, symbol)
             for elem in dictt:
@@ -117,7 +118,7 @@ def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}]
                         messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
                     if first_usage == 1:
                         # print("Adding element to changes_storage:", symbol)
-                        multi_changes_storage.append({symbol: dictt[elem]})
+                        multi_changes_storage.append({"symbol": symbol, "value": dictt[elem]})
                     else:
                         for i in range(len(multi_changes_storage)):
                             if symbol in multi_changes_storage[i]:
@@ -130,13 +131,13 @@ def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}]
                                     messages_to_print.append(
                                         f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
                                         f"make your move now, difference:{color.RED}{color.BOLD} {difference}(%){color.END}!!!")
-                        tmp_changes_storage.append({symbol: dictt[elem]})
+                        tmp_changes_storage.append({"symbol": symbol, "value": dictt[elem]})
                 dictt[elem] = current_price
-        first_usage = 0
         if first_usage != 1:
             multi_changes_storage.clear()
             multi_changes_storage = tmp_changes_storage
-        # print(f"New changes_storage: {multi_changes_storage}")
+        first_usage = 0
+        # messages_to_print.append(f"New changes_storage: {multi_changes_storage}")
         for line in messages_to_print:
             print(line)
 
@@ -151,8 +152,8 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
         print(f'{color.YELLOW}{color.BOLD}-------------5min method start-------------{color.END}')
         time.sleep(240)
         messages_to_print.append(f"""{color.GREEN}{color.BOLD}\n----------------------------------------
-                  FIVE MINUTES PERIOD
-    ----------------------------------------{color.END}""")
+      FIVE MINUTES PERIOD RESULTS
+----------------------------------------{color.END}""")
         for symbol, dictt in zip(symbols, initial_prices):
             current_price: float = get_price(bin_api, bin_key, symbol)
             for elem in dictt:
@@ -160,26 +161,27 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                 if abs(difference) > 0.54:
                     messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
                     # print(colored(symbol, 'green', attrs=['bold']), f"-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
-                if first_usage == 1:
-                    multi_changes_storage.append({symbol: dictt[elem]})
-                else:
-                    for i in range(len(multi_changes_storage)):
-                        if symbol in multi_changes_storage[i]:
-                            difference: float = round((1 - (multi_changes_storage[i].get(symbol) / current_price)) * 100, 3)
-                            if difference > 0.5:
-                                messages_to_print.append(
-                                    f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
-                                    f"make your move now, difference:{color.GREEN}{color.BOLD} {difference}(%){color.END}!!!")
-                            else:
-                                messages_to_print.append(
-                                    f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
-                                    f"make your move now, difference:{color.RED}{color.BOLD} {difference}(%){color.END}!!!")
-                    tmp_changes_storage.append({symbol: dictt[elem]})
+                    if first_usage == 1:
+                        multi_changes_storage.append({symbol: dictt[elem]})
+                    else:
+                        for i in range(len(multi_changes_storage)):
+                            if symbol in multi_changes_storage[i]:
+                                difference: float = round((1 - (multi_changes_storage[i].get(symbol) / current_price)) * 100, 3)
+                                if difference > 0.8:
+                                    messages_to_print.append(
+                                        f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
+                                        f"make your move now, difference:{color.GREEN}{color.BOLD} {difference}(%){color.END}!!!")
+                                elif difference < -0.7:
+                                    messages_to_print.append(
+                                        f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
+                                        f"make your move now, difference:{color.RED}{color.BOLD} {difference}(%){color.END}!!!")
+                        tmp_changes_storage.append({symbol: dictt[elem]})
                 dictt[elem] = current_price
-        first_usage = 0
         if first_usage != 1:
             multi_changes_storage.clear()
             multi_changes_storage = tmp_changes_storage
+        first_usage = 0
+        # messages_to_print.append(f"New changes_storage: {multi_changes_storage}")
         for line in messages_to_print:
             print(line)
 
