@@ -3,7 +3,6 @@ from binance_f import RequestClient
 from binance_f.base.printobject import *
 from contextlib import redirect_stdout
 import multiprocessing
-from termcolor import colored
 from socket import error as SocketError
 import errno
 
@@ -104,7 +103,10 @@ def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}]
         for symbol, dictt in zip(symbols, initial_prices):
             current_price: float = get_price(bin_api, bin_key, symbol)
             for elem in dictt:
-                difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
+                if current_price == 0:
+                    difference: float = round((1 - (dictt[elem] / current_price + 0.1)) * 100, 3)
+                else:
+                    difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                 if abs(difference) > 0.45:
                     if difference > 0.8:
                         messages_to_print.append(f"{color.RED}{color.BackgroundLightYellow}!!!BIG CANDLE!!!{color.END} {color.CYAN}{color.BOLD}"
@@ -157,10 +159,12 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
         for symbol, dictt in zip(symbols, initial_prices):
             current_price: float = get_price(bin_api, bin_key, symbol)
             for elem in dictt:
-                difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
+                if current_price == 0:
+                    difference: float = round((1 - (dictt[elem] / current_price+0.1)) * 100, 3)
+                else:
+                    difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                 if abs(difference) > 0.54:
                     messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
-                    # print(colored(symbol, 'green', attrs=['bold']), f"-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
                     if first_usage == 1:
                         multi_changes_storage.append({symbol: dictt[elem]})
                     else:
