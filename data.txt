@@ -1,6 +1,6 @@
-json_parse:<function MarkPrice.json_parse at 0x000001663C31E9D0>
-lastFundingRate:0.0001
-markPrice:4.2501539
-nextFundingTime:1663056000000
-symbol:LUNA2USDT
-time:1663055518000
+json_parse:<function MarkPrice.json_parse at 0x0000026541B36790>
+lastFundingRate:0.00283162
+markPrice:0.39513106
+nextFundingTime:1663286400000
+symbol:C98USDT
+time:1663265057000
