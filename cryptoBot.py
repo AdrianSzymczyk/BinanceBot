@@ -1,10 +1,12 @@
+import errno
+import multiprocessing
 import time
+from contextlib import redirect_stdout
+from datetime import datetime
+from socket import error as SocketError
+
 from binance_f import RequestClient
 from binance_f.base.printobject import *
-from contextlib import redirect_stdout
-import multiprocessing
-from socket import error as SocketError
-import errno
 
 
 class color:
@@ -104,9 +106,19 @@ def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}]
             current_price: float = get_price(bin_api, bin_key, symbol)
             for elem in dictt:
                 if current_price == 0:
-                    difference: float = round((1 - (dictt[elem] / current_price + 0.1)) * 100, 3)
+                    print(f"1min {symbol} current price is {current_price}, trying to set new current_price")
+                    # current_price = get_price(bin_api, bin_key, symbol)
+                    print(f'New current_price: {current_price}')
+                    difference = 0
+                    current_price = dictt[elem]
+                    # difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                 else:
                     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
+                if abs(difference) > 20:
+                    print(f'\n1min WRONG DIFFERENCE, actual values, previous_value:{dictt[elem]} current_price:{current_price}, setting up new current_price')
+                    # print(initial_prices)
+                    # current_price = get_price(bin_api, bin_key, symbol)
+                    # print(f'New current_price: {current_price}')
                 if abs(difference) > 0.45:
                     if difference > 0.8:
                         messages_to_print.append(f"{color.RED}{color.BackgroundLightYellow}!!!BIG CANDLE!!!{color.END} {color.CYAN}{color.BOLD}"
@@ -120,7 +132,7 @@ def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}]
                         messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
                     if first_usage == 1:
                         # print("Adding element to changes_storage:", symbol)
-                        multi_changes_storage.append({"symbol": symbol, "value": dictt[elem]})
+                        multi_changes_storage.append({symbol: dictt[elem]})
                     else:
                         for i in range(len(multi_changes_storage)):
                             if symbol in multi_changes_storage[i]:
@@ -133,7 +145,7 @@ def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}]
                                     messages_to_print.append(
                                         f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
                                         f"make your move now, difference:{color.RED}{color.BOLD} {difference}(%){color.END}!!!")
-                        tmp_changes_storage.append({"symbol": symbol, "value": dictt[elem]})
+                        tmp_changes_storage.append({symbol: dictt[elem]})
                 dictt[elem] = current_price
         if first_usage != 1:
             multi_changes_storage.clear()
@@ -152,17 +164,29 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
         messages_to_print: [str] = []
         tmp_changes_storage: [{str: float}] = []
         print(f'{color.YELLOW}{color.BOLD}-------------5min method start-------------{color.END}')
+        start_time = datetime.now().strftime("%H:%M:%S")
         time.sleep(240)
+        end_time = datetime.now().strftime("%H:%M:%S")
         messages_to_print.append(f"""{color.GREEN}{color.BOLD}\n----------------------------------------
-      FIVE MINUTES PERIOD RESULTS
+      FIVE MINUTES PERIOD RESULTS {start_time} - {end_time}
 ----------------------------------------{color.END}""")
         for symbol, dictt in zip(symbols, initial_prices):
             current_price: float = get_price(bin_api, bin_key, symbol)
             for elem in dictt:
                 if current_price == 0:
-                    difference: float = round((1 - (dictt[elem] / current_price+0.1)) * 100, 3)
+                    print(f"5min {symbol} current price is {current_price}")
+                    # current_price = get_price(bin_api, bin_key, symbol)
+                    print(f'New current_price: {current_price}')
+                    difference = 0
+                    current_price = dictt[elem]
+                    # difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                 else:
                     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
+                if abs(difference) > 20:
+                    print(f'\n1min WRONG DIFFERENCE, actual values, previous_value:{dictt[elem]} current_price:{current_price}, setting up new current_price')
+                    # print(initial_prices)
+                    # current_price = get_price(bin_api, bin_key, symbol)
+                    # print(f'New current_price: {current_price}')
                 if abs(difference) > 0.54:
                     messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
                     if first_usage == 1:
@@ -175,7 +199,7 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                                     messages_to_print.append(
                                         f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
                                         f"make your move now, difference:{color.GREEN}{color.BOLD} {difference}(%){color.END}!!!")
-                                elif difference < -0.7:
+                                elif difference < -0.8:
                                     messages_to_print.append(
                                         f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
                                         f"make your move now, difference:{color.RED}{color.BOLD} {difference}(%){color.END}!!!")
