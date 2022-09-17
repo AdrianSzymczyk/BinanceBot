@@ -1,6 +1,6 @@
 # BinanceBot
 
-This bot is created for sending notifications via telegram. Work on bot is still in progress :)
+This bot is created for sending notifications via telegram. Bot is based on Binance Future API. Work on bot is still in progress :)
 
 **Problems:**
 
