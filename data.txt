@@ -1,6 +1,6 @@
-json_parse:<function MarkPrice.json_parse at 0x0000026541B36790>
-lastFundingRate:0.00283162
-markPrice:0.39513106
-nextFundingTime:1663286400000
-symbol:C98USDT
-time:1663265057000
+json_parse:<function MarkPrice.json_parse at 0x000001F088144820>
+lastFundingRate:0.01530204
+markPrice:1.25401717
+nextFundingTime:1663459200000
+symbol:PHBBUSD
+time:1663456642000
