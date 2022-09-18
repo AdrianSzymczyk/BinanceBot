@@ -216,9 +216,9 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                                 greens[i]['multiple'] = 0
                                 greens[i]['start_value'] = current_price
                                 greens[i]['final_value'] = current_price
-                            if greens[i]['multiple'] > 2:
+                            if greens[i]['multiple'] > 3:
                                 multi_difference: float = round((1 - (greens[i]['start_value'] / greens[i]["final_value"])) * 100, 5)
-                                if multi_difference > 0.4:
+                                if multi_difference > 0.5:
                                     messages_to_print.append(f'{color.GREEN}{color.BOLD}{greens[i]["multiple"]} green move in a row for {symbol}, starting price:'
                                                              f' {greens[i]["start_value"]}, current value: {greens[i]["final_value"]}, the difference {multi_difference}{color.END}')
                 else:
@@ -239,9 +239,9 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                                 reds[i]['multiple'] = 0
                                 reds[i]['start_value'] = current_price
                                 reds[i]['final_value'] = current_price
-                            if reds[i]['multiple'] > 2:
+                            if reds[i]['multiple'] > 3:
                                 multi_difference: float = round((1 - (reds[i]['start_value'] / reds[i]["final_value"])) * 100, 5)
-                                if abs(multi_difference) > 0.4:
+                                if abs(multi_difference) > 0.5:
                                     messages_to_print.append(f'{color.RED}{color.BOLD}{reds[i]["multiple"]} red move in a row for {symbol}, starting price:'
                                                              f' {reds[i]["start_value"]}, current value: {reds[i]["final_value"]}, the difference {multi_difference}{color.END}')
                 if abs(difference) > 0.54:
@@ -308,13 +308,6 @@ def fifteen_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: fl
                         current_price = get_price(bin_api, bin_key, symbol)
                     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                     print(f'New current_price: {current_price}, new difference {difference}')
-                # while current_price == 0:
-                #     print(f"{color.RED}{color.BOLD}15min {symbol} current price is {current_price}{color.END}")
-                #     current_price = get_price(bin_api, bin_key, symbol)
-                #     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
-                #     print(f'New current_price: {current_price}, new difference {difference}')
-                # else:
-                #     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                 if abs(difference) > 0.84:
                     messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
                     if first_usage == 1:
