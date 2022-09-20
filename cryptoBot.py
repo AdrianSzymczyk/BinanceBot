@@ -23,6 +23,7 @@ class color:
     UNDERLINE = "\033[4m"
     BackgroundLightYellow = "\033[103m"
     BackgroundLightRed = "\033[101m"
+    BackgroundLightGray = "\033[47m"
 
 
 binance_api: str = 'PMboj6WZwCdSSLEL0RvvSiWuaTkYMzFXgabNwisbzNhGuogw0wK68aRGEg1KlepZ'
@@ -91,6 +92,10 @@ def create_first_array(bin_api: str, bin_key: str, symbols: [str]) -> [{str: flo
         cryptocurrency_list.append({symbol: get_price(bin_api, bin_key, symbol)})
     print(f"Available cryptocurrencies: {len(cryptocurrency_list)}")
     return cryptocurrency_list
+
+
+def set_difference(dividend: float, divider: float) -> float:
+    pass
 
 
 # def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}], symbols: [str]):
@@ -163,7 +168,6 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
     greens: [{}] = []
     reds: [{}] = []
     first_usage: int = 1
-    difference: int = 0
     while True:
         messages_to_print: [str] = []
         tmp_changes_storage: [{str: float}] = []
@@ -181,20 +185,20 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                 try:
                     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                 except ZeroDivisionError:
-                    print(f'\n{color.RED}{color.BOLD}5min DIVIDE BY 0 {symbol}{color.END}, actual values, previous_value:{dictt[elem]} current_price:{current_price}, '
-                          f'setting up new current_price')
+                    # print(f'\n{color.RED}{color.BOLD}5min DIVIDE BY 0 {symbol}{color.END}, actual values, previous_value:{dictt[elem]} current_price:{current_price}, '
+                    #       f'setting up new current_price')
                     while current_price == 0:
                         current_price = get_price(bin_api, bin_key, symbol)
                     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                     print(f'New current_price: {current_price}, new difference {difference}')
-                while abs(difference) > 30:
+                while abs(difference) > 40:
                     print(f'\n{color.RED}{color.BOLD}5min WRONG DIFFERENCE {symbol}{color.END}, actual values, previous_value:{dictt[elem]} current_price:{current_price}, '
                           f'setting up new current_price')
                     current_price = get_price(bin_api, bin_key, symbol)
                     while current_price == 0:
                         current_price = get_price(bin_api, bin_key, symbol)
                     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
-                    print(f'New current_price: {current_price}, new difference {difference}')
+                    # print(f'New current_price: {current_price}, new difference {difference}')
                 if first_usage == 1:
                     greens.append({"symbol": symbol, "multiple": 0, 'start_value': current_price, 'final_value': current_price})
                     reds.append({"symbol": symbol, "multiple": 0, 'start_value': current_price, 'final_value': current_price})
@@ -216,9 +220,13 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                                 greens[i]['multiple'] = 0
                                 greens[i]['start_value'] = current_price
                                 greens[i]['final_value'] = current_price
-                            if greens[i]['multiple'] > 3:
+                            if greens[i]['multiple'] > 2:
                                 multi_difference: float = round((1 - (greens[i]['start_value'] / greens[i]["final_value"])) * 100, 5)
-                                if multi_difference > 0.5:
+                                if multi_difference > 1:
+                                    messages_to_print.append(f'{color.GREEN}{color.BOLD}{greens[i]["multiple"]} green move in a row for {symbol}, starting price:'
+                                                             f' {greens[i]["start_value"]}, current value: {greens[i]["final_value"]}, the difference '
+                                                             f'{color.BackgroundLightGray}{multi_difference}{color.END}')
+                                elif multi_difference > 0.5:
                                     messages_to_print.append(f'{color.GREEN}{color.BOLD}{greens[i]["multiple"]} green move in a row for {symbol}, starting price:'
                                                              f' {greens[i]["start_value"]}, current value: {greens[i]["final_value"]}, the difference {multi_difference}{color.END}')
                 else:
@@ -239,12 +247,16 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                                 reds[i]['multiple'] = 0
                                 reds[i]['start_value'] = current_price
                                 reds[i]['final_value'] = current_price
-                            if reds[i]['multiple'] > 3:
+                            if reds[i]['multiple'] > 2:
                                 multi_difference: float = round((1 - (reds[i]['start_value'] / reds[i]["final_value"])) * 100, 5)
-                                if abs(multi_difference) > 0.5:
+                                if abs(multi_difference) > 1:
+                                    messages_to_print.append(f'{color.RED}{color.BOLD}{reds[i]["multiple"]} red move in a row for {symbol}, starting price:'
+                                                             f' {reds[i]["start_value"]}, current value: {reds[i]["final_value"]}, the difference '
+                                                             f'{color.BackgroundLightYellow}{multi_difference}{color.END}')
+                                elif abs(multi_difference) > 0.5:
                                     messages_to_print.append(f'{color.RED}{color.BOLD}{reds[i]["multiple"]} red move in a row for {symbol}, starting price:'
                                                              f' {reds[i]["start_value"]}, current value: {reds[i]["final_value"]}, the difference {multi_difference}{color.END}')
-                if abs(difference) > 0.54:
+                if abs(difference) > 0.64:  # only big changes
                     messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
                     if first_usage == 1:
                         multi_changes_storage.append({symbol: dictt[elem]})
@@ -277,7 +289,6 @@ def fifteen_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: fl
     # first_usage: 1-true, 0-false define if array should be firstly filled or updated
     multi_changes_storage: [{str: float}] = []
     first_usage: int = 1
-    difference: int = 0
     while True:
         messages_to_print: [str] = []
         tmp_changes_storage: [{str: float}] = []
@@ -294,13 +305,13 @@ def fifteen_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: fl
                 try:
                     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                 except ZeroDivisionError:
-                    print(f'\n{color.RED}{color.BOLD}15min DIVIDE BY 0 {symbol}{color.END}, actual values, previous_value:{dictt[elem]} current_price:{current_price}, '
-                          f'setting up new current_price')
+                    # print(f'\n{color.RED}{color.BOLD}15min DIVIDE BY 0 {symbol}{color.END}, actual values, previous_value:{dictt[elem]} current_price:{current_price}, '
+                    #       f'setting up new current_price')
                     while current_price == 0:
                         current_price = get_price(bin_api, bin_key, symbol)
                     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
-                    print(f'New current_price: {current_price}, new difference {difference}')
-                while abs(difference) > 30:
+                    # print(f'New current_price: {current_price}, new difference {difference}')
+                while abs(difference) > 40:
                     print(f'\n{color.RED}{color.BOLD}15min WRONG DIFFERENCE {symbol}{color.END}, actual values, previous_value:{dictt[elem]} current_price:{current_price}, '
                           f'setting up new current_price')
                     current_price = get_price(bin_api, bin_key, symbol)
@@ -309,7 +320,12 @@ def fifteen_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: fl
                     difference: float = round((1 - (dictt[elem] / current_price)) * 100, 3)
                     print(f'New current_price: {current_price}, new difference {difference}')
                 if abs(difference) > 0.84:
-                    messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
+                    if difference > 0:
+                        messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {color.GREEN}{color.BOLD}{difference}(%"
+                                                 f"){color.END}")
+                    else:
+                        messages_to_print.append(
+                            f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {color.RED}{color.BOLD}{difference}(%){color.END}")
                     if first_usage == 1:
                         multi_changes_storage.append({symbol: dictt[elem]})
                     else:
