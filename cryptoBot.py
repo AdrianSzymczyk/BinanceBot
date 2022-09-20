@@ -98,6 +98,7 @@ def set_difference(dividend: float, divider: float) -> float:
     pass
 
 
+
 # def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}], symbols: [str]):
 #     # first_usage: 1-true, 0-false define if array should be firstly filled or updated
 #     multi_changes_storage: [{str: float}] = []
