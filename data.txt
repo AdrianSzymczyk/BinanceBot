@@ -1,6 +1,6 @@
-json_parse:<function MarkPrice.json_parse at 0x000001EE38209F70>
+json_parse:<function MarkPrice.json_parse at 0x00000171404FD310>
 lastFundingRate:0.0001
-markPrice:1.25430717
-nextFundingTime:1663977600000
-symbol:RLCUSDT
-time:1663954002000
+markPrice:0.4556
+nextFundingTime:1664553600000
+symbol:STORJUSDT
+time:1664525031000

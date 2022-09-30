@@ -8,6 +8,8 @@ from socket import error as SocketError
 from binance_f import RequestClient
 from binance_f.base.printobject import *
 
+import api_keys
+
 
 class color:
     PURPLE = '\033[95m'
@@ -24,10 +26,6 @@ class color:
     BackgroundLightYellow = "\033[103m"
     BackgroundLightRed = "\033[101m"
     BackgroundLightGray = "\033[47m"
-
-
-binance_api: str = 'PMboj6WZwCdSSLEL0RvvSiWuaTkYMzFXgabNwisbzNhGuogw0wK68aRGEg1KlepZ'
-secret_key: str = 'HVerz1NkXi2PWW4D4PY7gm498tHYwzx6Kd636UXSwwHonL3YDmUhCHCULD5KR2qR'
 
 
 def get_price(bin_api: str, bin_key: str, symbol: str) -> float:
@@ -69,7 +67,7 @@ def get_symbols_list(bin_api: str, bin_key: str) -> [str]:
         with redirect_stdout(f):
             PrintMix.print_data(result.symbols)
     # create table and fill it with crypto symbols
-    exeptions: [str] = ['WAVEBUSD', '1000LUNCUSDT', 'ETHUSDT_220930', 'BTCUSDT_220930', 'ICP2USDT']
+    exeptions: [str] = ['WAVEBUSD', '1000LUNCUSDT', 'ETHUSDT_220930', 'BTCUSDT_220930', 'ICP2USDT', 'FOOTBALLUSDT']
     symbols_list: [str] = []
     with open('symbols.txt') as f:
         for line in f:
@@ -96,6 +94,13 @@ def create_first_array(bin_api: str, bin_key: str, symbols: [str]) -> [{str: flo
 
 def set_difference(dividend: float, divider: float, accuracy: int) -> float:
     return round((1 - (dividend / divider)) * 100, accuracy)
+
+
+def get_difference_for_sorting(text) -> float:
+    x = text.find('difference')
+    y = text.find('(%)')
+    return float(text[x + 12:y])
+
 
 # def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}], symbols: [str]):
 #     # first_usage: 1-true, 0-false define if array should be firstly filled or updated
@@ -168,13 +173,15 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
     reds: [{}] = []
     first_usage: int = 1
     while True:
+        intro_messages: [str] = []
+        multi_difference_messages: [str] = []
         messages_to_print: [str] = []
         tmp_changes_storage: [{str: float}] = []
         print(f'{color.YELLOW}{color.BOLD}-------------5min method start--------------{color.END}')
         start_time = datetime.now().strftime("%H:%M:%S")
         time.sleep(240)
         end_time = (datetime.now() + timedelta(minutes=1)).strftime("%H:%M:%S")
-        messages_to_print.append(f"""{color.GREEN}{color.BOLD}\n----------------------------------------------------------
+        intro_messages.append(f"""{color.GREEN}{color.BOLD}\n----------------------------------------------------------
       FIVE MINUTES PERIOD RESULTS {start_time} - {end_time}
 ----------------------------------------------------------{color.END}""")
         start_time_tmp = datetime.now().strftime("%H:%M:%S")
@@ -189,7 +196,7 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                     while current_price == 0:
                         current_price = get_price(bin_api, bin_key, symbol)
                     difference = set_difference(dictt[elem], current_price, 3)
-                    print(f'New current_price: {current_price}, new difference {difference}')
+                    # print(f'New current_price: {current_price}, new difference {difference}')
                 while abs(difference) > 20:
                     print(f'\n{color.RED}{color.BOLD}5min WRONG DIFFERENCE {symbol}{color.END}, actual values, previous_value:{dictt[elem]} current_price:{current_price}, '
                           f'setting up new current_price')
@@ -222,12 +229,13 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                             if greens[i]['multiple'] > 2:
                                 multi_difference = set_difference(greens[i]['start_value'], greens[i]["final_value"], 5)
                                 if multi_difference > 1:
-                                    messages_to_print.append(f'{color.GREEN}{color.BOLD}{greens[i]["multiple"]} green move in a row for {symbol}, starting price:'
-                                                             f' {greens[i]["start_value"]}, current value: {greens[i]["final_value"]}, the difference '
-                                                             f'{color.BackgroundLightGray}{multi_difference}{color.END}')
+                                    multi_difference_messages.append(f'{color.GREEN}{color.BOLD}{greens[i]["multiple"]} green move in a row for {symbol}, starting price:'
+                                                                     f' {greens[i]["start_value"]}, current value: {greens[i]["final_value"]}, the {color.BackgroundLightGray}difference: '
+                                                                     f'{multi_difference}(%){color.END}')
                                 elif multi_difference > 0.5:
-                                    messages_to_print.append(f'{color.GREEN}{color.BOLD}{greens[i]["multiple"]} green move in a row for {symbol}, starting price:'
-                                                             f' {greens[i]["start_value"]}, current value: {greens[i]["final_value"]}, the difference {multi_difference}{color.END}')
+                                    multi_difference_messages.append(f'{color.GREEN}{color.BOLD}{greens[i]["multiple"]} green move in a row for {symbol}, starting price:'
+                                                                     f' {greens[i]["start_value"]}, current value: {greens[i]["final_value"]}, the difference:'
+                                                                     f' {multi_difference}(%){color.END}')
                 else:
                     for i in range(len(reds)):
                         if symbol in reds[i]['symbol']:
@@ -249,12 +257,12 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                             if reds[i]['multiple'] > 2:
                                 multi_difference = set_difference(greens[i]['start_value'], greens[i]["final_value"], 5)
                                 if abs(multi_difference) > 1:
-                                    messages_to_print.append(f'{color.RED}{color.BOLD}{reds[i]["multiple"]} red move in a row for {symbol}, starting price:'
-                                                             f' {reds[i]["start_value"]}, current value: {reds[i]["final_value"]}, the difference '
-                                                             f'{color.BackgroundLightYellow}{multi_difference}{color.END}')
+                                    multi_difference_messages.append(f'{color.RED}{color.BOLD}{reds[i]["multiple"]} red move in a row for {symbol}, starting price:'
+                                                                     f' {reds[i]["start_value"]}, current value: {reds[i]["final_value"]}, '
+                                                                     f'the {color.BackgroundLightYellow}difference: {multi_difference}(%){color.END}')
                                 elif abs(multi_difference) > 0.5:
-                                    messages_to_print.append(f'{color.RED}{color.BOLD}{reds[i]["multiple"]} red move in a row for {symbol}, starting price:'
-                                                             f' {reds[i]["start_value"]}, current value: {reds[i]["final_value"]}, the difference {multi_difference}{color.END}')
+                                    multi_difference_messages.append(f'{color.RED}{color.BOLD}{reds[i]["multiple"]} red move in a row for {symbol}, starting price:'
+                                                                     f' {reds[i]["start_value"]}, current value: {reds[i]["final_value"]}, the difference: {multi_difference}(%){color.END}')
                 if abs(difference) > 0.64:  # only big changes
                     messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {difference}(%)")
                     if first_usage == 1:
@@ -266,11 +274,11 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                                 if difference > 0.8:
                                     messages_to_print.append(
                                         f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
-                                        f"make your move now, difference:{color.GREEN}{color.BOLD} {difference}(%){color.END}!!!")
+                                        f"make your move now, {color.GREEN}{color.BOLD}difference: {difference}(%){color.END}!!!")
                                 elif difference < -0.8:
                                     messages_to_print.append(
                                         f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
-                                        f"make your move now, difference:{color.RED}{color.BOLD} {difference}(%){color.END}!!!")
+                                        f"make your move now, {color.RED}{color.BOLD}difference: {difference}(%){color.END}!!!")
                         tmp_changes_storage.append({symbol: dictt[elem]})
                 dictt[elem] = current_price
         if first_usage != 1:
@@ -279,7 +287,9 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
         first_usage = 0
         end_time_tmp = datetime.now().strftime("%H:%M:%S")
         # messages_to_print.append(f"New changes_storage: {multi_changes_storage}")
-        for line in messages_to_print:
+        multi_difference_messages.sort(key=lambda array: get_difference_for_sorting(array), reverse=True)
+        messages_to_print.sort(key=lambda array: get_difference_for_sorting(array), reverse=True)
+        for line in intro_messages+messages_to_print+multi_difference_messages:
             print(line)
         print(f'\nTime spend on filling arrays {start_time_tmp} - {end_time_tmp}')
 
@@ -289,13 +299,14 @@ def fifteen_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: fl
     multi_changes_storage: [{str: float}] = []
     first_usage: int = 1
     while True:
+        intro_messages: [str] = []
         messages_to_print: [str] = []
         tmp_changes_storage: [{str: float}] = []
         print(f'{color.MAGENTA}{color.BOLD}-------------15min method start-------------{color.END}')
         start_time = datetime.now().strftime("%H:%M:%S")
         time.sleep(840)
         end_time = datetime.now().strftime("%H:%M:%S")
-        messages_to_print.append(f"""{color.BLUE}{color.BOLD}\n----------------------------------------------------------
+        intro_messages.append(f"""{color.BLUE}{color.BOLD}\n----------------------------------------------------------
       FIFTEEN MINUTES PERIOD RESULTS {start_time} - {end_time}
 ----------------------------------------------------------{color.END}""")
         for symbol, dictt in zip(symbols, initial_prices):
@@ -320,11 +331,11 @@ def fifteen_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: fl
                     print(f'New current_price: {current_price}, new difference {difference}')
                 if abs(difference) > 0.84:
                     if difference > 0:
-                        messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {color.GREEN}{color.BOLD}{difference}(%"
+                        messages_to_print.append(f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, {color.GREEN}{color.BOLD}difference: {difference}(%"
                                                  f"){color.END}")
                     else:
                         messages_to_print.append(
-                            f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, difference: {color.RED}{color.BOLD}{difference}(%){color.END}")
+                            f"[{symbol}]-> old value: {dictt[elem]}, new value: {current_price}, {color.RED}{color.BOLD}difference: {difference}(%){color.END}")
                     if first_usage == 1:
                         multi_changes_storage.append({symbol: dictt[elem]})
                     else:
@@ -334,11 +345,11 @@ def fifteen_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: fl
                                 if difference > 0.8:
                                     messages_to_print.append(
                                         f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
-                                        f"make your move now, difference:{color.GREEN}{color.BOLD} {difference}(%){color.END}!!!")
+                                        f"make your move now, {color.GREEN}{color.BOLD}difference: {difference}(%){color.END}!!!")
                                 elif difference < -0.8:
                                     messages_to_print.append(
                                         f"{color.GREEN}{color.BackgroundLightRed}{color.BOLD}>>>>>DOUBLE signal{color.END} in a row for {color.CYAN}{color.BOLD}{color.UNDERLINE}{symbol}{color.END} "
-                                        f"make your move now, difference:{color.RED}{color.BOLD} {difference}(%){color.END}!!!")
+                                        f"make your move now, {color.RED}{color.BOLD}difference: {difference}(%){color.END}!!!")
                         tmp_changes_storage.append({symbol: dictt[elem]})
                 dictt[elem] = current_price
         if first_usage != 1:
@@ -346,20 +357,20 @@ def fifteen_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: fl
             multi_changes_storage = tmp_changes_storage
         first_usage = 0
         # messages_to_print.append(f"New changes_storage: {multi_changes_storage}")
-        for line in messages_to_print:
+        messages_to_print.sort(key=lambda array: get_difference_for_sorting(array), reverse=True)
+        for line in intro_messages + messages_to_print:
             print(line)
 
 
 if __name__ == '__main__':
     # create initial arrays
-    symbolss = get_symbols_list(binance_api, secret_key)
-    init_prices: [{str: float}] = create_first_array(binance_api, secret_key, symbolss)
+    symbolss = get_symbols_list(api_keys.binance_api, api_keys.secret_key)
+    init_prices: [{str: float}] = create_first_array(api_keys.binance_api, api_keys.secret_key, symbolss)
 
     # multiprocessing functions
     # p1 = multiprocessing.Process(target=one_minute_period, args=(binance_api, secret_key, init_prices, symbolss,))
-    p2 = multiprocessing.Process(target=five_minutes_period, args=(binance_api, secret_key, init_prices, symbolss,))
-    p3 = multiprocessing.Process(target=fifteen_minutes_period, args=(binance_api, secret_key, init_prices, symbolss,))
+    p2 = multiprocessing.Process(target=five_minutes_period, args=(api_keys.binance_api, api_keys.secret_key, init_prices, symbolss,))
+    p3 = multiprocessing.Process(target=fifteen_minutes_period, args=(api_keys.binance_api, api_keys.secret_key, init_prices, symbolss,))
     # p1.start()
     p2.start()
     p3.start()
-    # print("How Changes_signal looks like in loop:", changes_signals)
