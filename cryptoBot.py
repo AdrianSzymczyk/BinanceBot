@@ -4,11 +4,13 @@ import time
 from contextlib import redirect_stdout
 from datetime import datetime, timedelta
 from socket import error as SocketError
-
 from binance_f import RequestClient
 from binance_f.base.printobject import *
+from binance_f.exception.binanceapiexception import BinanceApiException
 
 import api_keys
+import logging
+
 
 
 class color:
@@ -33,6 +35,9 @@ def get_price(bin_api: str, bin_key: str, symbol: str) -> float:
     request_client = RequestClient(api_key=bin_api, secret_key=bin_key)
     try:
         result = request_client.get_mark_price(symbol=symbol)
+    except BinanceApiException:
+        logging.warning(f'{symbol} unable to set')
+        pass
     except SocketError as e:
         if e.errno != errno.ECONNRESET:
             raise
@@ -47,6 +52,8 @@ def get_price(bin_api: str, bin_key: str, symbol: str) -> float:
     with open("data.txt") as f:
         try:
             for line in f.readlines()[2]:
+                if line == 'print_data none data':
+                    pass
                 if line == '\n':
                     continue
                 else:
@@ -67,7 +74,7 @@ def get_symbols_list(bin_api: str, bin_key: str) -> [str]:
         with redirect_stdout(f):
             PrintMix.print_data(result.symbols)
     # create table and fill it with crypto symbols
-    exeptions: [str] = ['WAVEBUSD', '1000LUNCUSDT', 'ETHUSDT_220930', 'BTCUSDT_220930', 'ICP2USDT', 'FOOTBALLUSDT']
+    exeptions: [str] = ['1000LUNCUSDT', 'ETHUSDT_220930', 'BTCUSDT_220930', 'ICP2USDT', 'BTCUSDT_221230', 'ETHUSDT_221230', 'WAVEBUSD']
     symbols_list: [str] = []
     with open('symbols.txt') as f:
         for line in f:
@@ -78,7 +85,6 @@ def get_symbols_list(bin_api: str, bin_key: str) -> [str]:
                 else:
                     symbols_list.append(value.replace('\n', ''))
     # print(symbols_list)
-    # print(len(symbols_list))
     return symbols_list
 
 
