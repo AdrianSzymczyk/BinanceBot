@@ -1,6 +1,6 @@
 json_parse:<function MarkPrice.json_parse at 0x00000171404FD310>
 lastFundingRate:0.0001
-markPrice:0.4556
+markPrice:0.45530948
 nextFundingTime:1664553600000
 symbol:STORJUSDT
-time:1664525031000
+time:1664525953001

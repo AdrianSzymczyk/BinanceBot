@@ -97,9 +97,9 @@ def set_difference(dividend: float, divider: float, accuracy: int) -> float:
 
 
 def get_difference_for_sorting(text) -> float:
-    x = text.find('difference')
-    y = text.find('(%)')
-    return float(text[x + 12:y])
+    s = text.find('difference')
+    e = text.find('(%)')
+    return float(text[s + 12:e])
 
 
 # def one_minute_period(bin_api: str, bin_key: str, initial_prices: [{str: float}], symbols: [str]):
