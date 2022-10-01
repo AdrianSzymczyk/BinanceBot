@@ -12,7 +12,7 @@ This bot is created for sending notifications via telegram. For now there are tw
   - 3 same color candles in a row, then different color candle should reset the multiple
   - create 'greens' and 'reds' at the same time before conditions   
   - improve 'greens' and 'reds'
-* to fix:
   - 'while abs(difference) > 20' loop prevent dividing by zero (somewhat repaired)
+* to fix:
   - ConnectionResetError: [WinError 10054] (unable to fix, it occurs when 'get_price' method is called by two processes in the same time)
 
