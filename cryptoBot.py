@@ -12,7 +12,6 @@ import api_keys
 import logging
 
 
-
 class color:
     PURPLE = '\033[95m'
     CYAN = '\033[96m'
@@ -218,9 +217,9 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                     for i in range(len(greens)):
                         if symbol in greens[i]['symbol']:
                             if reds[i]['multiple'] > 0:
-                                greens[i]['multiple'] = 0
-                                greens[i]['start_value'] = current_price
-                                greens[i]['final_value'] = current_price
+                                reds[i]['multiple'] = 0
+                                reds[i]['start_value'] = current_price
+                                reds[i]['final_value'] = current_price
                             if greens[i]['multiple'] == 0:
                                 greens[i]['start_value'] = current_price
                                 greens[i]['final_value'] = current_price
@@ -261,7 +260,7 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
                                 reds[i]['start_value'] = current_price
                                 reds[i]['final_value'] = current_price
                             if reds[i]['multiple'] > 2:
-                                multi_difference = set_difference(greens[i]['start_value'], greens[i]["final_value"], 5)
+                                multi_difference = set_difference(reds[i]['start_value'], reds[i]["final_value"], 5)
                                 if abs(multi_difference) > 1:
                                     multi_difference_messages.append(f'{color.RED}{color.BOLD}{reds[i]["multiple"]} red move in a row for {symbol}, starting price:'
                                                                      f' {reds[i]["start_value"]}, current value: {reds[i]["final_value"]}, '
@@ -295,7 +294,7 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
         # messages_to_print.append(f"New changes_storage: {multi_changes_storage}")
         multi_difference_messages.sort(key=lambda array: get_difference_for_sorting(array), reverse=True)
         messages_to_print.sort(key=lambda array: get_difference_for_sorting(array), reverse=True)
-        for line in intro_messages+messages_to_print+multi_difference_messages:
+        for line in intro_messages + messages_to_print + multi_difference_messages:
             print(line)
         print(f'\nTime spend on filling arrays {start_time_tmp} - {end_time_tmp}')
 
