@@ -296,8 +296,6 @@ def five_minutes_period(bin_api: str, bin_key: str, initial_prices: [{str: float
         messages_to_print.sort(key=lambda array: get_difference_for_sorting(array), reverse=True)
         for line in intro_messages + messages_to_print + multi_difference_messages:
             print(line)
-        # print("Greens", greens)
-        # print("Reds", reds)
         print(f'\nTime spend on filling arrays {start_time_tmp} - {end_time_tmp}')
 
 
